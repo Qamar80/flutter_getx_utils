@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 
 
@@ -22,8 +23,23 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
 
+
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+      backgroundColor: Colors.blue,
+          onPressed: (){
+        Get.snackbar('Qamar Abbas', 'Learn Flutter',
+        icon: Icon(Icons.error),
+        onTap: (snap){
+          
+        },
+            mainButton: TextButton(onPressed: (){}, child: Text('Click')),
+            
+        backgroundColor: Colors.red,
+        snackPosition: SnackPosition.BOTTOM
+        );
+      }),
     );
   }
 }
