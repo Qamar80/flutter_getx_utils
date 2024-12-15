@@ -25,8 +25,31 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
-      body:Container(
+      body:Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          ListTile(
+            title: Text('message'.tr),
+            subtitle: Text('name'.tr),
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          Row(
+            children: [
+              OutlinedButton(onPressed: (){
+                Get.updateLocale(Locale('en','US'));
+              }, child: Text('English')),
 
+              SizedBox(width: 20,),
+
+              OutlinedButton(onPressed: (){
+                Get.updateLocale(Locale('ur','PK'));
+              }, child: Text('Urdu')),
+            ],
+          )
+        ],
       )
       );
 

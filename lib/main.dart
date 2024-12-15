@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx/home_screen.dart';
+import 'package:flutter_getx/languages.dart';
 import 'package:flutter_getx/screen_one.dart';
 import 'package:flutter_getx/screen_two.dart';
 import 'package:get/get.dart';
@@ -16,6 +17,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Demo',
+      
+
+      translations: Languages(),
+      //add language every country have language code i.c pakistan PK
+      locale: Locale('en', 'US'),
+      //by default selected one
+      fallbackLocale: Locale('en', 'US'),
+      
       theme: ThemeData(
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
