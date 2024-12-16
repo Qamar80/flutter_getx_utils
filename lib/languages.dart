@@ -16,6 +16,11 @@ class Languages extends Translations{
       'message': 'آپ کا نام کیا ہے؟',
       'name': 'قمر عباس'
     },
+
+   /* 'ur_PK':{
+      'message': 'آپ کا نام کیا ہے؟',
+      'name': 'قمر عباس'
+    },*/
   };
 
 
